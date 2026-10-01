@@ -14,7 +14,7 @@
   <!-- ENCABEZADO -->
   <header class="encabezado">
     <div class="logo-contenedor">
-      <div class="logo">▦</div>
+      <div class="logo">🏭</div>
       <div class="titulo-logo">
         <h1>MaqTrack</h1>
         <p><?= appConfig.DESCRIPCION ?></p>
@@ -22,8 +22,8 @@
     </div>
     <div class="usuario-contenedor">
       <div class="empresa">
-        <span>⌂</span>
-        Colgate-Palmolive · Bogotá
+        <span>🏢</span>
+        Colgate-Palmolive · Cali
       </div>
       <div class="usuario">CR</div>
     </div>
@@ -31,33 +31,74 @@
 
   <!-- CONTENIDO PRINCIPAL -->
   <main class="contenido">
-    <!-- COLUMNA IZQUIERDA -->
-    <section class="columna-izquierda">
-      <div class="estadisticas">
-        <div class="estadistica azul">
+
+    <!-- BIENVENIDA -->
+    <section class="bienvenida">
+      <div>
+        <h2 id="saludo">Buenos días, Planta Liquidos</h2>
+        <p id="fecha">Miércoles, 30 de septiembre de 2026</p>
+      </div>
+      <div class="datos-turno">
+        <span class="chip">Turno mañana</span>
+        <span class="chip">Planta Líquidos</span>
+      </div>
+    </section>
+
+    <!-- ESTADÍSTICAS -->
+    <section class="estadisticas">
+      <div class="estadistica est-azul">
+        <div class="icono-est">🏭</div>
+        <div>
           <strong>42</strong>
           <span>Máquinas</span>
         </div>
-        <div class="estadistica rojo">
+      </div>
+
+      <div class="estadistica est-verde">
+        <div class="icono-est">✅</div>
+        <div>
+          <strong>34</strong>
+          <span>Operativas</span>
+        </div>
+      </div>
+
+      <div class="estadistica est-rojo">
+        <div class="icono-est">🚨</div>
+        <div>
           <strong>3</strong>
           <span>Con daño</span>
         </div>
-        <div class="estadistica amarillo">
+      </div>
+
+      <div class="estadistica est-amarillo">
+        <div class="icono-est">🛠️</div>
+        <div>
           <strong>5</strong>
           <span>En<br>reparación</span>
         </div>
       </div>
+    </section>
 
-      <div class="boton-escanear">
-        <span class="icono-qr">⌗</span>
-        <span>Escanear QR</span>
-      </div>
+    <!-- ZONA PRINCIPAL -->
+    <div class="principal">
 
-      <div class="boton-menu">
-        <div class="icono-menu azul-icono">◷</div>
-        <span>Historial de escaneos</span>
-        <span class="flecha">›</span>
-      </div>
+      <!-- COLUMNA IZQUIERDA -->
+      <section class="columna-izquierda">
+
+        <div class="boton-escanear" onclick="location.href='escaner.html'">
+          <span class="icono-qr">📷</span>
+          <span>Escanear QR</span>
+        </div>
+
+        <div class="boton-menu" onclick="location.href='historial.html'">
+          <div class="icono-menu azul-icono">🕘</div>
+          <span>Historial de escaneos</span>
+          <span class="flecha">›</span>
+        </div>
+
+        <!-- ALERTAS -->
+        <div class="alertas">
+          <h3>🚨 3 máquinas fuera de servicio</h3>
 
       <div class="boton-menu">
         <div class="icono-menu rojo-icono">⚠</div>
